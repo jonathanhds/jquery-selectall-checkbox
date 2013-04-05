@@ -21,6 +21,10 @@
 		function deselectAll() {
 			$(checkboxes).check('off');
 		}
+		
+		if (allSelected()) {
+			allCheckbox.check('on');
+		}
 
 		allCheckbox.on("click", function() {
 			if (allCheckbox.is(':checked')) {
