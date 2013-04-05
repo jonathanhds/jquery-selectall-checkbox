@@ -36,16 +36,14 @@
 			return true;
 		});
 
-		$(checkboxes).each(function(key, value) {
-			$(value).on("click", function() {
-				if (allSelected()) {
-					allCheckbox.check('on');
-				} else {
-					allCheckbox.check('off');
-				}
+		$(checkboxes).on("click", function() {
+			if (allSelected()) {
+				allCheckbox.check('on');
+			} else {
+				allCheckbox.check('off');
+			}
 
-				return true;
-			});
+			return true;
 		});
 	};
 
