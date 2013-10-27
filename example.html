@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title></title>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="jquery.select.all.checkbox.js"></script>
+		<style>
+			table, th, td {
+				border: 1px solid black;
+			}
+
+			thead {
+				background-color: #C0C0C0;
+			}
+
+			td {
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>jquery-selectll-checckbox code sample</h1>
+		<table>
+			<thead>
+				<tr>
+					<th><input type="checkbox" id="select_all" /></th>
+					<th>Language</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox" class="language_checkbox" /></td>
+					<td>Java</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="language_checkbox" /></td>
+					<td>JavaScript</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="language_checkbox" /></td>
+					<td>Ruby</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="language_checkbox" /></td>
+					<td>PHP</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="language_checkbox" /></td>
+					<td>C#</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="language_checkbox" /></td>
+					<td>Python</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	<script>
+		$(function() {
+			$("#select_all").checkboxgroup(".language_checkbox");
+		});
+	</script>
+</html>
